@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04B0080B2AD0041200BA2772 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0080A2AD0041200BA2772 /* AppDelegate.swift */; };
+		04B0080D2AD0041200BA2772 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0080C2AD0041200BA2772 /* SceneDelegate.swift */; };
+		04B0080F2AD0041200BA2772 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0080E2AD0041200BA2772 /* ViewController.swift */; };
+		04B008122AD0041200BA2772 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B008102AD0041200BA2772 /* Main.storyboard */; };
+		04B008142AD0041400BA2772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B008132AD0041400BA2772 /* Assets.xcassets */; };
+		04B008172AD0041400BA2772 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B008152AD0041400BA2772 /* LaunchScreen.storyboard */; };
+		04B008222AD0041400BA2772 /* ubikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B008212AD0041400BA2772 /* ubikeTests.swift */; };
+		04B0082C2AD0041400BA2772 /* ubikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0082B2AD0041400BA2772 /* ubikeUITests.swift */; };
+		04B0082E2AD0041400BA2772 /* ubikeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0082D2AD0041400BA2772 /* ubikeUITestsLaunchTests.swift */; };
+		04B0083F2AD13B1500BA2772 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0083E2AD13B1500BA2772 /* Cell.xib */; };
+		04B008412AD140F800BA2772 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B008402AD140F800BA2772 /* menu.png */; };
+		04B008432AD143E400BA2772 /* del.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B008422AD143E400BA2772 /* del.png */; };
+		04B008472AD1495E00BA2772 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B008462AD1495E00BA2772 /* logo.png */; };
+		04B008492AD14FD900BA2772 /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B008482AD14FD900BA2772 /* menuViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04B0081E2AD0041400BA2772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04B007FF2AD0041200BA2772 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04B008062AD0041200BA2772;
+			remoteInfo = ubike;
+		};
+		04B008282AD0041400BA2772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04B007FF2AD0041200BA2772 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04B008062AD0041200BA2772;
+			remoteInfo = ubike;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04B008072AD0041200BA2772 /* ubike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ubike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B0080A2AD0041200BA2772 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04B0080C2AD0041200BA2772 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04B0080E2AD0041200BA2772 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04B008112AD0041200BA2772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04B008132AD0041400BA2772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04B008162AD0041400BA2772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04B008182AD0041400BA2772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B0081D2AD0041400BA2772 /* ubikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ubikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B008212AD0041400BA2772 /* ubikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ubikeTests.swift; sourceTree = "<group>"; };
+		04B008272AD0041400BA2772 /* ubikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ubikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B0082B2AD0041400BA2772 /* ubikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ubikeUITests.swift; sourceTree = "<group>"; };
+		04B0082D2AD0041400BA2772 /* ubikeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ubikeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04B0083E2AD13B1500BA2772 /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
+		04B008402AD140F800BA2772 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		04B008422AD143E400BA2772 /* del.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = del.png; sourceTree = "<group>"; };
+		04B008462AD1495E00BA2772 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		04B008482AD14FD900BA2772 /* menuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04B008042AD0041200BA2772 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B0081A2AD0041400BA2772 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B008242AD0041400BA2772 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04B007FE2AD0041200BA2772 = {
+			isa = PBXGroup;
+			children = (
+				04B0083B2AD12EFF00BA2772 /* img */,
+				04B008092AD0041200BA2772 /* ubike */,
+				04B008202AD0041400BA2772 /* ubikeTests */,
+				04B0082A2AD0041400BA2772 /* ubikeUITests */,
+				04B008082AD0041200BA2772 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04B008082AD0041200BA2772 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04B008072AD0041200BA2772 /* ubike.app */,
+				04B0081D2AD0041400BA2772 /* ubikeTests.xctest */,
+				04B008272AD0041400BA2772 /* ubikeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04B008092AD0041200BA2772 /* ubike */ = {
+			isa = PBXGroup;
+			children = (
+				04B0080A2AD0041200BA2772 /* AppDelegate.swift */,
+				04B0080C2AD0041200BA2772 /* SceneDelegate.swift */,
+				04B0080E2AD0041200BA2772 /* ViewController.swift */,
+				04B008482AD14FD900BA2772 /* menuViewController.swift */,
+				04B0083E2AD13B1500BA2772 /* Cell.xib */,
+				04B008102AD0041200BA2772 /* Main.storyboard */,
+				04B008132AD0041400BA2772 /* Assets.xcassets */,
+				04B008152AD0041400BA2772 /* LaunchScreen.storyboard */,
+				04B008182AD0041400BA2772 /* Info.plist */,
+			);
+			path = ubike;
+			sourceTree = "<group>";
+		};
+		04B008202AD0041400BA2772 /* ubikeTests */ = {
+			isa = PBXGroup;
+			children = (
+				04B008212AD0041400BA2772 /* ubikeTests.swift */,
+			);
+			path = ubikeTests;
+			sourceTree = "<group>";
+		};
+		04B0082A2AD0041400BA2772 /* ubikeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04B0082B2AD0041400BA2772 /* ubikeUITests.swift */,
+				04B0082D2AD0041400BA2772 /* ubikeUITestsLaunchTests.swift */,
+			);
+			path = ubikeUITests;
+			sourceTree = "<group>";
+		};
+		04B0083B2AD12EFF00BA2772 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				04B008402AD140F800BA2772 /* menu.png */,
+				04B008462AD1495E00BA2772 /* logo.png */,
+				04B008422AD143E400BA2772 /* del.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04B008062AD0041200BA2772 /* ubike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B008312AD0041400BA2772 /* Build configuration list for PBXNativeTarget "ubike" */;
+			buildPhases = (
+				04B008032AD0041200BA2772 /* Sources */,
+				04B008042AD0041200BA2772 /* Frameworks */,
+				04B008052AD0041200BA2772 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ubike;
+			productName = ubike;
+			productReference = 04B008072AD0041200BA2772 /* ubike.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04B0081C2AD0041400BA2772 /* ubikeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B008342AD0041400BA2772 /* Build configuration list for PBXNativeTarget "ubikeTests" */;
+			buildPhases = (
+				04B008192AD0041400BA2772 /* Sources */,
+				04B0081A2AD0041400BA2772 /* Frameworks */,
+				04B0081B2AD0041400BA2772 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04B0081F2AD0041400BA2772 /* PBXTargetDependency */,
+			);
+			name = ubikeTests;
+			productName = ubikeTests;
+			productReference = 04B0081D2AD0041400BA2772 /* ubikeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04B008262AD0041400BA2772 /* ubikeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B008372AD0041400BA2772 /* Build configuration list for PBXNativeTarget "ubikeUITests" */;
+			buildPhases = (
+				04B008232AD0041400BA2772 /* Sources */,
+				04B008242AD0041400BA2772 /* Frameworks */,
+				04B008252AD0041400BA2772 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04B008292AD0041400BA2772 /* PBXTargetDependency */,
+			);
+			name = ubikeUITests;
+			productName = ubikeUITests;
+			productReference = 04B008272AD0041400BA2772 /* ubikeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04B007FF2AD0041200BA2772 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					04B008062AD0041200BA2772 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					04B0081C2AD0041400BA2772 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 04B008062AD0041200BA2772;
+					};
+					04B008262AD0041400BA2772 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 04B008062AD0041200BA2772;
+					};
+				};
+			};
+			buildConfigurationList = 04B008022AD0041200BA2772 /* Build configuration list for PBXProject "ubike" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04B007FE2AD0041200BA2772;
+			productRefGroup = 04B008082AD0041200BA2772 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04B008062AD0041200BA2772 /* ubike */,
+				04B0081C2AD0041400BA2772 /* ubikeTests */,
+				04B008262AD0041400BA2772 /* ubikeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04B008052AD0041200BA2772 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B0083F2AD13B1500BA2772 /* Cell.xib in Resources */,
+				04B008412AD140F800BA2772 /* menu.png in Resources */,
+				04B008172AD0041400BA2772 /* LaunchScreen.storyboard in Resources */,
+				04B008432AD143E400BA2772 /* del.png in Resources */,
+				04B008472AD1495E00BA2772 /* logo.png in Resources */,
+				04B008142AD0041400BA2772 /* Assets.xcassets in Resources */,
+				04B008122AD0041200BA2772 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B0081B2AD0041400BA2772 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B008252AD0041400BA2772 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04B008032AD0041200BA2772 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B0080F2AD0041200BA2772 /* ViewController.swift in Sources */,
+				04B0080B2AD0041200BA2772 /* AppDelegate.swift in Sources */,
+				04B0080D2AD0041200BA2772 /* SceneDelegate.swift in Sources */,
+				04B008492AD14FD900BA2772 /* menuViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B008192AD0041400BA2772 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B008222AD0041400BA2772 /* ubikeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B008232AD0041400BA2772 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B0082C2AD0041400BA2772 /* ubikeUITests.swift in Sources */,
+				04B0082E2AD0041400BA2772 /* ubikeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04B0081F2AD0041400BA2772 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04B008062AD0041200BA2772 /* ubike */;
+			targetProxy = 04B0081E2AD0041400BA2772 /* PBXContainerItemProxy */;
+		};
+		04B008292AD0041400BA2772 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04B008062AD0041200BA2772 /* ubike */;
+			targetProxy = 04B008282AD0041400BA2772 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04B008102AD0041200BA2772 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04B008112AD0041200BA2772 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04B008152AD0041400BA2772 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04B008162AD0041400BA2772 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04B0082F2AD0041400BA2772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04B008302AD0041400BA2772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04B008322AD0041400BA2772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TU9DUKYSCJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ubike/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SWIFT.ubike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04B008332AD0041400BA2772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TU9DUKYSCJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ubike/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SWIFT.ubike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04B008352AD0041400BA2772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SWIFT.ubikeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ubike.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ubike";
+			};
+			name = Debug;
+		};
+		04B008362AD0041400BA2772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SWIFT.ubikeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ubike.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ubike";
+			};
+			name = Release;
+		};
+		04B008382AD0041400BA2772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SWIFT.ubikeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ubike;
+			};
+			name = Debug;
+		};
+		04B008392AD0041400BA2772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SWIFT.ubikeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ubike;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04B008022AD0041200BA2772 /* Build configuration list for PBXProject "ubike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B0082F2AD0041400BA2772 /* Debug */,
+				04B008302AD0041400BA2772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B008312AD0041400BA2772 /* Build configuration list for PBXNativeTarget "ubike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B008322AD0041400BA2772 /* Debug */,
+				04B008332AD0041400BA2772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B008342AD0041400BA2772 /* Build configuration list for PBXNativeTarget "ubikeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B008352AD0041400BA2772 /* Debug */,
+				04B008362AD0041400BA2772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B008372AD0041400BA2772 /* Build configuration list for PBXNativeTarget "ubikeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B008382AD0041400BA2772 /* Debug */,
+				04B008392AD0041400BA2772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04B007FF2AD0041200BA2772 /* Project object */;
+}
