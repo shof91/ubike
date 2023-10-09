@@ -7,9 +7,38 @@
 
 import UIKit
 import MapKit
-class CustomTableCell: UITableViewCell {
-    weak var longitudeLabel: UILabel!
-    weak var latitudeLabel: UILabel!
+class CustomTableViewCell: UITableViewCell {
+
+    var label1: UILabel!
+    var label2: UILabel!
+    var label3: UILabel!
+
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        let font = UIFont(name: "Arial", size: 10.0 )
+        label1 = UILabel()
+        label2 = UILabel()
+        label3 = UILabel()
+        label1.font = font
+        label2.font = font
+        label3.font = font
+        addSubview(label1)
+        addSubview(label2)
+        addSubview(label3)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+        label1.frame = CGRect(x: 23, y: 10, width: contentView.frame.width - 20, height: 20)
+        label2.frame = CGRect(x: 75, y: 10, width: contentView.frame.width - 20, height: 20)
+        label3.frame = CGRect(x: 153, y: 10, width: 120, height: 20)
+    }
+    
 }
 class ViewController: UIViewController, UINavigationControllerDelegate, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
@@ -47,6 +76,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UITableV
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
+        searchBar.placeholder = "搜尋站點"
+        searchBar.searchTextField.textColor = UIColor.init(red: 182.0/255.0, green: 204.0/255.0, blue: 35.0/255.0, alpha: 1.0)
         navigationController?.delegate = self
         navigationController?.navigationBar.barTintColor = .white
         navigationController?.navigationBar.backgroundColor = .white
@@ -83,12 +114,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UITableV
         task.resume()
         
         
-        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width-40, height: 30))
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width-40, height: 40))
         //print("\(tableView.bounds.origin.x)")
         headerView.translatesAutoresizingMaskIntoConstraints = false
         let headerText = UILabel(frame: CGRect(x: 20, y: 0, width: Int(headerView.frame.width), height: Int(headerView.frame.height)))
-        headerText.text = " 縣市\(space1)  區域\(space2) 站點名稱\(space3)"
-        headerText.font = UIFont(name: "Arial", size: 10.0 )
+        headerText.text = "縣市  區域\(space2) 站點名稱"
+        headerText.font = UIFont(name: "Arial", size: 20.0 )
         headerText.backgroundColor = .clear
         headerText.textColor = .white
         headerView.addSubview(headerText)
@@ -123,16 +154,18 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UITableV
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cellIdentifier = "CustomTableViewCell"
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? CustomTableViewCell
 
+        if cell == nil {
+            cell = CustomTableViewCell(style: .default, reuseIdentifier: cellIdentifier)
+        }
         let station = filteredStations[indexPath.row]
-        let fontcell = UIFont(name: "Arial", size: 10.0 )
-        cell.textLabel?.font = fontcell
-        cell.textLabel?.text = "台北市\(space1)\(station.sarea)\(space2)\(station.sna)"
-        
-        let cellLabel = UILabel(frame: CGRect(x: 80, y: 15, width: 100, height: 15))
-        cellLabel.text = "\(station.sarea)"
-        cellLabel.font = fontcell
+        cell!.label1.text = "台北市"
+        cell!.label2.text = "\(station.sarea)"
+        cell!.label3.text = "\(station.sna)"
+
+
         //cell.addSubview(cellLabel)
         //cell.detailTextLabel?.text = "(\(station.lat), \(station.lng))"
         //let path = Bundle.main.path(forResource: "meun", ofType: "png")
@@ -140,20 +173,21 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UITableV
         
         switch indexPath.row  % 2 {
             case 0:
-                cell.backgroundColor = .clear
+            cell?.backgroundColor = .clear
             case 1:
-                cell.backgroundColor = .lightGray
+            cell?.backgroundColor = .lightGray
              default:
                  break
          }
 
-        return cell
+        return cell!
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
-
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     @objc func menuButtonTapped() {
         // Handle left menu button tap
         //self.performSegue(withIdentifier: "goToView2", sender: nil)
